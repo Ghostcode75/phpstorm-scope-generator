@@ -9,13 +9,15 @@ Create PhpStorm scopes based on the files contained in a GitHub Pull request.
 
 ## Usage
 
+Note that this script won't check out the pull request branch for you. You need to do that first. Then run this script, which will generate a Scope in PhpStorm with a list of the changed files in the pull request.
+
 ``` bash
 cd /path/to/git-repo
 bash /path/to/scope-generator.sh {pull-request-url}
 # In PhpStorm, "Inspect Code" and select the new scope
 ```
 
-Example:
+Specific example:
 
 ``` bash
 cd /tmp
